@@ -20,6 +20,10 @@ The AI never touches core logic. Saving data, duplicate checks, conversation cre
 4. **Data layer (Supabase / PostgreSQL).** Three entities: leads, conversations and messages. A lead is identified by phone number, and the same WhatsApp message ID is never stored twice.
 5. **AI agent.** An agent with Supabase tools reads the conversation and replies to the lead.
 
+## Documentation
+
+See [ARCHITECTURE.md](ARCHITECTURE.md) for the message flow diagram, the normalized field set and the data model.
+
 ## Reliability
 
 - Fixed field schema and validation before any write
